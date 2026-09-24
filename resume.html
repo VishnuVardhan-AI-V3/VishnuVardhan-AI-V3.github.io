@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nagadhasari Vishnu Vardhan | AI/ML Developer</title>
+
+    <meta
+        name="description"
+        content="Nagadhasari Vishnu Vardhan — AI/ML Developer, Python Developer and AI Automation Builder."
+    >
+
+    <style>
+        :root {
+            --bg: #05070a;
+            --bg-soft: #0a0f14;
+            --panel: rgba(15, 22, 29, 0.62);
+            --panel-strong: rgba(18, 27, 35, 0.82);
+            --border: rgba(0, 229, 255, 0.20);
+            --border-light: rgba(255, 255, 255, 0.10);
+
+            --cyan: #00e5ff;
+            --cyan-soft: #69f3ff;
+            --green: #00ff9c;
+            --white: #f4fbff;
+            --text: #d5e4ea;
+            --muted: #8da2ac;
+
+            --shadow:
+                0 30px 80px rgba(0, 0, 0, 0.45),
+                0 0 40px rgba(0, 229, 255, 0.04);
+
+            --radius: 22px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family:
+                Inter,
+                ui-sans-serif,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            color: var(--text);
+
+            background:
+                radial-gradient(
+                    circle at 15% 10%,
+                    rgba(0, 229, 255, 0.10),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(0, 255, 156, 0.07),
+                    transparent 25%
+                ),
+                radial-gradient(
+                    circle at 50% 100%,
+                    rgba(0, 229, 255, 0.05),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: -1;
+
+            background-image:
+                linear-gradient(
+                    rgba(255, 255, 255, 0.02) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.02) 1px,
+                    transparent 1px
+                );
+
+            background-size: 45px 45px;
+
+            mask-image: linear-gradient(
+                to bottom,
+                black,
+                transparent
+            );
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: -1;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(0, 229, 255, 0.055),
+                    transparent 65%
+                );
+
+            filter: blur(30px);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .resume {
+            width: min(1180px, calc(100% - 32px));
+            margin: 40px auto;
+        }
+
+        /* --------------------------------
+           GLASS
+        -------------------------------- */
+
+        .glass {
+            position: relative;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255, 255, 255, 0.075),
+                    rgba(255, 255, 255, 0.025)
+                ),
+                var(--panel);
+
+            border: 1px solid var(--border-light);
+            border-top-color: rgba(255, 255, 255, 0.16);
+
+            box-shadow: var(--shadow);
+
+            backdrop-filter: blur(22px) saturate(140%);
+            -webkit-backdrop-filter: blur(22px) saturate(140%);
+        }
+
+        .glass::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+
+            border-radius: inherit;
+
+            background:
+                linear-gradient(
+                    120deg,
+                    rgba(255,255,255,0.08),
+                    transparent 28%,
+                    transparent 70%,
+                    rgba(0,229,255,0.025)
+                );
+
+            pointer-events: none;
+        }
+
+        /* --------------------------------
+           HEADER
+        -------------------------------- */
+
+        header {
+            position: relative;
+            overflow: hidden;
+
+            padding: 46px;
+
+            border-radius: var(--radius);
+
+            border: 1px solid var(--border);
+            border-top-color: rgba(255,255,255,0.18);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(0, 229, 255, 0.075),
+                    rgba(255, 255, 255, 0.025) 42%,
+                    rgba(0, 255, 156, 0.035)
+                ),
+                var(--panel-strong);
+
+            box-shadow: var(--shadow);
+
+            backdrop-filter: blur(28px) saturate(145%);
+            -webkit-backdrop-filter: blur(28px) saturate(145%);
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 180px;
+            height: 1px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    var(--cyan),
+                    transparent
+                );
+
+            box-shadow: 0 0 20px var(--cyan);
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            width: 230px;
+            height: 230px;
+            right: -90px;
+            top: -100px;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(0,229,255,0.12),
+                    transparent 68%
+                );
+
+            pointer-events: none;
+        }
+
+        .status-line {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            margin-bottom: 18px;
+
+            color: var(--green);
+
+            font-size: 0.78rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .status-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+
+            background: var(--green);
+
+            box-shadow:
+                0 0 8px var(--green),
+                0 0 22px rgba(0, 255, 156, 0.65);
+
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.55;
+                transform: scale(0.8);
+            }
+        }
+
+        h1 {
+            position: relative;
+
+            font-size: clamp(2rem, 6vw, 4.5rem);
+            line-height: 1.05;
+
+            color: var(--white);
+
+            letter-spacing: -0.045em;
+
+            text-shadow:
+                0 0 30px rgba(0,229,255,0.10);
+        }
+
+        .accent {
+            color: var(--cyan);
+        }
+
+        .role {
+            margin-top: 18px;
+
+            color: var(--cyan-soft);
+
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            margin-top: 24px;
+        }
+
+        .contact a,
+        .contact span {
+            display: inline-flex;
+            align-items: center;
+
+            padding: 8px 13px;
+
+            border-radius: 999px;
+
+            background: rgba(255,255,255,0.045);
+            border: 1px solid rgba(255,255,255,0.08);
+
+            color: var(--muted);
+
+            font-size: 0.88rem;
+
+            transition:
+                transform 0.25s ease,
+                border-color 0.25s ease,
+                background 0.25s ease;
+        }
+
+        .contact a:hover {
+            color: var(--cyan);
+            border-color: rgba(0,229,255,0.35);
+            background: rgba(0,229,255,0.06);
+            transform: translateY(-2px);
+        }
+
+        /* --------------------------------
+           LAYOUT
+        -------------------------------- */
+
+        .content {
+            display: grid;
+            grid-template-columns: 0.72fr 1.5fr;
+            gap: 22px;
+
+            margin-top: 22px;
+        }
+
+        .sidebar,
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        .section {
+            position: relative;
+            overflow: hidden;
+
+            padding: 28px;
+
+            border-radius: var(--radius);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255,255,255,0.055),
+                    rgba(255,255,255,0.018)
+                ),
+                var(--panel);
+
+            border: 1px solid var(--border-light);
+            border-top-color: rgba(255,255,255,0.13);
+
+            box-shadow: var(--shadow);
+
+            backdrop-filter: blur(20px) saturate(135%);
+            -webkit-backdrop-filter: blur(20px) saturate(135%);
+        }
+
+        .section::after {
+            content: "";
+            position: absolute;
+
+            top: 0;
+            right: 0;
+
+            width: 140px;
+            height: 140px;
+
+            background:
+                radial-gradient(
+                    circle at top right,
+                    rgba(0,229,255,0.07),
+                    transparent 70%
+                );
+
+            pointer-events: none;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            margin-bottom: 20px;
+
+            color: var(--white);
+
+            font-size: 1rem;
+            font-weight: 800;
+
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+
+        .section-title::before {
+            content: "";
+            width: 25px;
+            height: 2px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--cyan),
+                    transparent
+                );
+
+            box-shadow: 0 0 10px var(--cyan);
+        }
+
+        .section p {
+            color: var(--text);
+            font-size: 0.95rem;
+        }
+
+        /* --------------------------------
+           SUMMARY
+        -------------------------------- */
+
+        .summary {
+            font-size: 1rem !important;
+            color: #dcecf2 !important;
+        }
+
+        /* --------------------------------
+           SKILLS
+        -------------------------------- */
+
+        .skill-group {
+            margin-bottom: 20px;
+        }
+
+        .skill-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .skill-label {
+            display: flex;
+            justify-content: space-between;
+
+            margin-bottom: 9px;
+
+            color: var(--white);
+            font-size: 0.88rem;
+            font-weight: 700;
+        }
+
+        .skill-line {
+            height: 5px;
+            overflow: hidden;
+
+            border-radius: 99px;
+
+            background: rgba(255,255,255,0.06);
+        }
+
+        .skill-line span {
+            display: block;
+            width: var(--skill-width);
+            height: 100%;
+
+            border-radius: inherit;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    var(--cyan),
+                    var(--green)
+                );
+
+            box-shadow:
+                0 0 10px rgba(0,229,255,0.45);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            padding: 7px 11px;
+
+            border-radius: 10px;
+
+            background: rgba(0,229,255,0.035);
+
+            border: 1px solid rgba(0,229,255,0.13);
+
+            color: #bdebf0;
+
+            font-size: 0.78rem;
+            font-weight: 600;
+
+            transition:
+                transform 0.2s ease,
+                border-color 0.2s ease,
+                background 0.2s ease;
+        }
+
+        .tag:hover {
+            transform: translateY(-2px);
+
+            border-color: rgba(0,229,255,0.4);
+
+            background: rgba(0,229,255,0.08);
+
+            color: white;
+        }
+
+        /* --------------------------------
+           PROJECTS
+        -------------------------------- */
+
+        .projects {
+            display: grid;
+            gap: 16px;
+        }
+
+        .project {
+            position: relative;
+
+            padding: 20px;
+
+            border-radius: 17px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255,255,255,0.055),
+                    rgba(255,255,255,0.015)
+                );
+
+            border: 1px solid rgba(255,255,255,0.08);
+
+            transition:
+                transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+        }
+
+        .project:hover {
+            transform: translateY(-4px);
+
+            border-color: rgba(0,229,255,0.28);
+
+            box-shadow:
+                0 15px 40px rgba(0,0,0,0.25),
+                0 0 25px rgba(0,229,255,0.05);
+        }
+
+        .project-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+
+            margin-bottom: 12px;
+        }
+
+        .project-title strong {
+            color: var(--white);
+            font-size: 1rem;
+        }
+
+        .project-tech {
+            flex-shrink: 0;
+
+            padding: 6px 9px;
+
+            border-radius: 8px;
+
+            color: var(--cyan);
+
+            background: rgba(0,229,255,0.06);
+
+            border: 1px solid rgba(0,229,255,0.12);
+
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .project ul {
+            padding-left: 19px;
+        }
+
+        .project li {
+            margin: 7px 0;
+
+            color: var(--muted);
+
+            font-size: 0.88rem;
+        }
+
+        .project li::marker {
+            color: var(--cyan);
+        }
+
+        /* --------------------------------
+           EDUCATION
+        -------------------------------- */
+
+        .education-main {
+            color: var(--white);
+            font-weight: 750;
+        }
+
+        .education-college {
+            margin-top: 7px;
+
+            color: var(--cyan-soft) !important;
+        }
+
+        .education-status {
+            display: inline-flex;
+
+            margin-top: 12px;
+            padding: 7px 11px;
+
+            border-radius: 8px;
+
+            background: rgba(0,255,156,0.055);
+
+            border: 1px solid rgba(0,255,156,0.15);
+
+            color: var(--green) !important;
+
+            font-size: 0.75rem !important;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        /* --------------------------------
+           INTERESTS
+        -------------------------------- */
+
+        .interest-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .interest {
+            padding: 12px;
+
+            border-radius: 12px;
+
+            background: rgba(255,255,255,0.035);
+            border: 1px solid rgba(255,255,255,0.07);
+
+            color: #c9dce2;
+
+            font-size: 0.8rem;
+        }
+
+        /* --------------------------------
+           FOOTER
+        -------------------------------- */
+
+        footer {
+            margin-top: 22px;
+            padding: 20px;
+
+            text-align: center;
+
+            color: #6f838c;
+            font-size: 0.76rem;
+
+            border-radius: var(--radius);
+
+            background: rgba(255,255,255,0.025);
+
+            border: 1px solid rgba(255,255,255,0.06);
+
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+
+        footer span {
+            color: var(--cyan);
+        }
+
+        /* --------------------------------
+           PRINT
+        -------------------------------- */
+
+        @media print {
+            body {
+                background: white;
+                color: #111;
+            }
+
+            body::before,
+            body::after {
+                display: none;
+            }
+
+            .resume {
+                width: 100%;
+                margin: 0;
+            }
+
+            header,
+            .section,
+            footer,
+            .project {
+                background: white !important;
+                color: #111 !important;
+
+                box-shadow: none !important;
+
+                border: 1px solid #ddd !important;
+
+                backdrop-filter: none !important;
+                -webkit-backdrop-filter: none !important;
+            }
+
+            h1,
+            .section-title,
+            .project-title strong,
+            .skill-label {
+                color: #111 !important;
+            }
+
+            .role,
+            .education-college,
+            .accent {
+                color: #333 !important;
+            }
+
+            .section p,
+            .project li,
+            .contact a,
+            .contact span {
+                color: #333 !important;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* --------------------------------
+           RESPONSIVE
+        -------------------------------- */
+
+        @media (max-width: 900px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .sidebar .section:last-child {
+                grid-column: 1 / -1;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .resume {
+                width: min(100% - 18px, 600px);
+                margin: 9px auto;
+            }
+
+            header,
+            .section {
+                padding: 22px;
+                border-radius: 18px;
+            }
+
+            h1 {
+                font-size: 2.3rem;
+            }
+
+            .sidebar {
+                display: flex;
+            }
+
+            .project-title {
+                flex-direction: column;
+            }
+
+            .project-tech {
+                align-self: flex-start;
+            }
+
+            .interest-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 430px) {
+            .interest-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact {
+                flex-direction: column;
+            }
+
+            .contact a,
+            .contact span {
+                width: 100%;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="status-line">
+            <span class="status-dot"></span>
+            AI / ML DEVELOPER PROFILE
+        </div>
+
+        <h1>
+            NAGADHASARI
+            <span class="accent">VISHNU VARDHAN</span>
+        </h1>
+
+        <p class="role">
+            AI/ML Developer | Python Developer | AI Automation Builder
+        </p>
+
+        <div class="contact">
+
+            <span>📍 Kadapa, India</span>
+
+            <a href="mailto:goutham.v.2029@gmail.com">
+                ✉ goutham.v.2029@gmail.com
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/vishnu-vardhan-n-41b38a434"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
+
+            <a
+                href="https://github.com/GouthamV-ai2029"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <!-- PROFILE -->
+            <section class="section">
+
+                <h2 class="section-title">
+                    Profile
+                </h2>
+
+                <p class="summary">
+                    Third-year B.Tech student specializing in Artificial
+                    Intelligence and Machine Learning with a strong interest
+                    in Python development, AI assistants, automation, voice
+                    interaction and IoT systems.
+                </p>
+
+            </section>
+
+
+            <!-- PROGRAMMING -->
+            <section class="section">
+
+                <h2 class="section-title">
+                    Programming
+                </h2>
+
+                <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">Embedded C++</span>
+                </div>
+
+            </section>
+
+
+            <!-- AI -->
+            <section class="section">
+
+                <h2 class="section-title">
+                    Artificial Intelligence
+                </h2>
+
+                <div class="skill-tags">
+                    <span class="tag">AI/ML Concepts</span>
+                    <span class="tag">LLMs</span>
+                    <span class="tag">AI API Integration</span>
+                </div>
+
+            </section>
+
+
+            <!-- DEVELOPMENT -->
+            <section class="section">
+
+                <h2 class="section-title">
+                    Development
+                </h2>
+
+                <div class="skill-tags">
+                    <span class="tag">Automation</span>
+                    <span class="tag">System Control</span>
+                    <span class="tag">Web Interaction</span>
+                    <span class="tag">File Management</span>
+                </div>
+
+            </section>
+
+
+            <!-- IOT -->
+            <section class="section">
+
+                <h2 class="section-title">
+                    IoT
+                </h2>
+
+                <div class="skill-tags">
+                    <span class="tag">ESP32</span>
+                    <span class="tag">Sensors</span>
+                    <span class="tag">Displays</span>
+                    <span class="tag">Microcontrollers</span>
+                </div>
+
+            </section>
+
+        </aside>
+
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <!-- PROJECTS -->
+            <section class="section">
+
+                <h2 class="section-title">
+                    Projects
+                </h2>
+
+                <div class="projects">
+
+                    <!-- TITAN -->
+                    <article class="project">
+
+                        <div class="project-title">
+
+                            <strong>
+                                T.I.T.A.N — Tactical Intelligence and
+                                Task Automation Network
+                            </strong>
+
+                            <span class="project-tech">
+                                Python · AI · Voice
+                            </span>
+
+                        </div>
+
+                        <ul>
+
+                            <li>
+                                Developed an advanced personal AI assistant
+                                focused on artificial intelligence and automation.
+                            </li>
+
+                            <li>
+                                Integrated AI conversations and voice
+                                interaction workflows.
+                            </li>
+
+                            <li>
+                                Built concepts for system automation,
+                                web interaction and file management.
+                            </li>
+
+                            <li>
+                                Extended development toward ESP32 and IoT integration.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                    <!-- VOICE AUTOMATION -->
+                    <article class="project">
+
+                        <div class="project-title">
+
+                            <strong>
+                                Voice Automation System
+                            </strong>
+
+                            <span class="project-tech">
+                                Python · Speech · TTS
+                            </span>
+
+                        </div>
+
+                        <ul>
+
+                            <li>
+                                Developed voice-command workflows
+                                for automated actions.
+                            </li>
+
+                            <li>
+                                Experimented with speech recognition
+                                and text-to-speech.
+                            </li>
+
+                            <li>
+                                Designed command routing for system
+                                and web actions.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                    <!-- ESP32 -->
+                    <article class="project">
+
+                        <div class="project-title">
+
+                            <strong>
+                                ESP32 Intelligent Systems
+                            </strong>
+
+                            <span class="project-tech">
+                                ESP32 · Embedded C++
+                            </span>
+
+                        </div>
+
+                        <ul>
+
+                            <li>
+                                Built ESP32-based experiments for
+                                intelligent device control.
+                            </li>
+
+                            <li>
+                                Developed LED, display and
+                                hardware-control programs.
+                            </li>
+
+                            <li>
+                                Explored IoT integration between
+                                AI software and devices.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- EDUCATION -->
+            <section class="section">
+
+                <h2 class="section-title">
+                    Education
+                </h2>
+
+                <p class="education-main">
+                    Bachelor of Technology —
+                    Artificial Intelligence & Machine Learning
+                </p>
+
+                <p class="education-college">
+                    Kandula Obul Reddy Memorial College of Engineering
+                </p>
+
+                <p class="education-status">
+                    Currently in Third Year
+                </p>
+
+            </section>
+
+
+            <!-- AREAS OF INTEREST -->
+            <section class="section">
+
+                <h2 class="section-title">
+                    Areas of Interest
+                </h2>
+
+                <div class="interest-grid">
+
+                    <div class="interest">
+                        Artificial Intelligence
+                    </div>
+
+                    <div class="interest">
+                        Machine Learning
+                    </div>
+
+                    <div class="interest">
+                        Python Development
+                    </div>
+
+                    <div class="interest">
+                        AI Automation
+                    </div>
+
+                    <div class="interest">
+                        Voice AI
+                    </div>
+
+                    <div class="interest">
+                        IoT
+                    </div>
+
+                    <div class="interest">
+                        Embedded Systems
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <span>T.I.T.A.N</span>
+        &nbsp;•&nbsp;
+        AI / ML
+        &nbsp;•&nbsp;
+        Python
+        &nbsp;•&nbsp;
+        Automation
+        &nbsp;•&nbsp;
+        IoT
+    </footer>
+
+</div>
+
+</body>
+</html>
